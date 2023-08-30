@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<style>
+    .row{
+      
+        height: 120vh;
+        border: 1px solid #2E2E2E;
+        width:80% 80%;
+        margin-left:30px;
+        background-color:rgba(34, 166, 243, 0.228);
+    }
+    .form-control{
+        width: 400px;
+    }
+    #cars{
+        width: 400px;
+        height: 7vh;
+        border-radius: 4px;
+        border: rgba(142, 140, 140, 0.167) solid;
+    }
+   .date{
+    width: 400px;
+    height: 7vh;
+    color: black;
+    border: rgba(142, 140, 140, 0.167) solid;
+    border-radius: 4px;
+   }
+   .btn{
+    width: 400px;
+   }
+   form{
+    margin-left: 300px;
+
+        
+   }
+</style>
+<body >
+
+
+    <br><br><br><br>
+    <div class="container">
+        
+        <div class="row">
+            <div>
+                <img src="./img/logo.png" alt="" style="margin-left: 350px;">
+                <h1 style="margin-left: 450px;">log in </h1>
+            </div>
+          <div class="col">
+
+            <form  method="post" action="submit.html">
+                <div class="form-row">
+                <div class="form-group col-md-6">
+                    
+                    <input type="text" class="form-control" id="inputEmail4" name="fname" placeholder="name"autocomplete="off"  onkeydown="return/[a-z A-Z]/i.test(event.key)"  >
+                  </div>
+                  <br>
+                  <div class="form-group col-md-6">
+                   
+                    <input type="email" class="form-control" id="inputEmail4" name="email"placeholder="Email"autocomplete="off"  onkeypress="return validateNaber(event.kry)" >
+                  </div>
+                  <br>
+                  <div class="form-group col-md-6">
+                   
+                    <input type="text" class="form-control" name="mobile" id="mobile"onkeypress="return validateNumber(event)" pattern="{/0-9/}" maxlength="10" placeholder="Enter mobile" name="mobile" required>
+                  </div>
+                  <script>
+                    function validateNumber(e) {
+                      const pattern = /^[0-9]$/;
+        
+                      return pattern.test(e.key)
+                    }
+                  </script>
+                </div><br>
+                <div class="form-group">
+               
+                  <input type="text" class="form-control" id="inputAddress" name="Address" placeholder="Address">
+                </div><br>
+                <div class="form-group">
+                    
+                    <input type="datetime-local" id="myLocalDate" class="date" name="datetime" Placeholder="datetime-local">
+                  </div><br>
+                  <div class="form-group">
+                   
+                <select id="cars" name="Hospital">
+                    <option value="volvo">select Hospitals</option>
+        <option value="saab">Green City Hospital</option>
+        <option value="opel">Prayag Hospital and Reserch Centre</option>
+        <option value="audi">Yathartha Hospital</option>
+        <option value="audi">Vinayak Hospital</option>
+        <option value="audi">Felix Healthcare</option>
+        <option value="audi">IndoGulf Hospital and Diagnostics</option>
+        <option value="audi">Amrapali Hospital</option>
+        <option value="audi">Shri Krishna Life Line Hospital</option>
+        <option value="audi">Sai Health Care</option>
+        <option value="audi">Dr Sunalis Dental Solutions</option>
+            
+                  </select>
+                </div>
+                  <br>   <div class="form-group">
+                   
+                <select id="cars" Name="Doctors">
+                    <option value="volvo">Select Doctor</option>
+                    <option value="saab">Dr. Ajita Bagai Kakkar</option>
+                    <option value="opel">Dr. Manmohan Lohra</option>
+                    <option value="audi">Dr. Kashish Kalra</option>
+                    <option value="audi">  Dr. Mukesh Girdhar</option>
+                    <option value="audi">Dr. Ritu Gupta</option>
+                    <option value="audi">Dr. J.K. Jain</option>
+                    <option value="audi">  Dr. Arvind Kaul</option>
+                    <option value="audi"> Dr. Manju Keshari</option>
+                    <option value="audi">  Dr. Puneet Aggarwal</option>
+            
+                  </select>
+                </div><br>
+                <div class="form-group">
+                  
+                    <select id="cars" Name="Demartment">
+                        <option value="volvo">Select Demartment</option>
+                        <option value="saab"> Cardiology Department</option>
+                        <option value="opel">Neurology Department</option>
+                        <option value="audi"> Radiology Department</option>
+                        <option value="audi">Pharmacy Department</option>
+                        <option value="audi"> Laboratory Department</option>
+                        <option value="audi">Pharmacy Department</option>
+                        <option value="audi">Rehabilitation Department</option>
+                        <option value="audi">Inpatient Department</option>
+                        <option value="audi">Intensive Care Unit (ICU)</option>
+                        <option value="audi">Hematology department</option>
+                        <option value="audi">Ophthalmology department</option>
+                        <option value="audi">Orthopedic department</option>
+                        <option value="audi">Inpatient Department (IPD)</option>
+                        <option value="audi">Outpatient Department (OPD)</option>
+                        <option value="audi">Radiology department</option>
+                        
+                        <option value="audi">Psychiatry Department</option>
+                      </select>
+                  </div>
+               <br>
+                <button type="submit" class="btn btn-primary" >Sign in</button>
+              </form>
+          </div>
+
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .form{
+        border: rgb(237, 232, 232) solid;
+        height: 70vh;
+        margin-top: 60px;
+        width: 44%;
+    margin-left: 60vh;
+    padding: 20PX;
+    background-color: blanchedalmond;
+        
+    }
+    .form-control{
+        width: 60%;
+        margin-left: 100px;
+    }
+    button{
+        margin-left: 100px;
+        width: 60%;
+    }
+    body{
+        background-image: url('./img/BACKGROUMD.jpg');
+   
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+</style>
+<body >
+    <div class="form">
+        <form id="demo">
+        <div>
+            <img src="./img/logo.png" alt="" style="width: 130px; margin-left: 200px;">
+            <h5 style="font-size: 20px; margin-left: 230px;">Sing In</h5>
+        </div>
+        <div class="title">
+            
+                <div class="form-group">
+                    
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Hospitals making impossible possible.</option>
+                      
+                     </select>
+                  </div>
+                <br>
+                <div class="form-group">
+                  
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                  
+                </div>
+                <br>
+                <div class="form-group">
+                 
+                  <input type="password" class="form-control" id="exampleInputPassword1"  placeholder="Password" required>
+                </div><br>
+                <div class="form-group">
+                 
+                    <textarea type="password" class="form-control" id="exampleInputPassword1" placeholder="Massage" required></textarea>
+                  </div>
+               <br>
+                <button type="submit" class="btn btn-primary" onclick="myFunction()" >Submit</button>
+              </form>
+        </div>
+    </div>
+    <script>
+       function myFunction() {
+
+  if (confirm("Press a button!")) {
+    
+    document.write('<a href="file:///C:/Users/user/Desktop/hospital/page1.html#partners">find the doctors</a>');
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+        </script>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
